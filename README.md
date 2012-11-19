@@ -99,6 +99,6 @@ Also Class have a helper get_class to get Class by name:
 ###Class.get_class(name)
 Get class by name:
 ```js
-var TestClass = Class.get_module("TestClass");
+var TestClass = Class.get_class("TestClass");
 new TestClass();
 ```
