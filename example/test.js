@@ -1,4 +1,4 @@
-var Emmitter = Module("Emitter",["Class","jquery"],function(){
+Module.create("Emitter",["Class","jquery"],function(){
 
     var Test = Class("Test",{
         init: function () {
