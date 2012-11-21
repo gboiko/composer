@@ -1,5 +1,26 @@
-Module.create("Emitter",["Class","jquery"],function(){
-    console.log(arguments)
+App({
+    name: 'Zevs',
+    version: '1.0.0',
+    build: '12.11.2012',
+    namespace: 'Zevs',
+    templates: {
+        directory: '../templates/',
+        extension: ['html','erb']
+    },
+    js: {
+        directory: '../',
+        extension: ['js','some_script']
+    },
+    style: {
+        directory: '../style/css/',
+        extension: ['css','less']
+    }
+});
+
+
+
+var emmiter = Module.define("Emitter",["Class"],function(Class){
+
 
     var Test = Class("Test",{
         init: function () {
@@ -21,6 +42,8 @@ Module.create("Emitter",["Class","jquery"],function(){
     var test = new Test();
     var test1 = new Test1();
 
+
+    return test;
     console.log(test.get());
     console.log(test1.get());
 
